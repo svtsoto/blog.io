@@ -1,20 +1,20 @@
 # Site settings
-title: 读立写生
+title: CoorDiNaTion
 header-img: "img/green.jpg"
 tagline: "cn"  
-description: "陈素封|读而立·写而生"  
+description: "孙涛sv|一条咸鱼"  
 baseurl: ""
-url: "http://cnfeat"  
+url: "http://svtsoto"  
 
 # About/contact
 owner: 
-  name: " CnFeat"
-  email: CnFeat@gmail.com
+  name: " svtsoto"
+  email: svt@Foxmail.com
   bio: "写就是写的报酬"
 
 # Data
 gavatar: http://dreamofbook.qiniudn.com/Az..png
-favicon: img/favicon.png
+favicon: http://7xp3wa.com1.z0.glb.clouddn.com/favicon.ico
 
 douban_username:  
 twitter_username: 
@@ -43,7 +43,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "CnFeat"
+      author: "svtsoto"
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
 # Comments 
