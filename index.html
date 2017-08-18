@@ -18,7 +18,7 @@ description: "孙涛sv"
             {{ post.content | strip_html | truncate:150 }}
         </div>
     </a>
-    <p class="post-meta"><font size="15px">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</font></p>
+    <p class="post-meta"><font size="12px">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</font></p>
 </div>
 
 <hr>
