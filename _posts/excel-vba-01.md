@@ -1,1 +1,67 @@
+---
+layout: post
+title: Excel中使用宏实现数据筛选
+date: 2017-9-15
+categories: blog
+tags: [效率]
+description: svt's blog.
+---
 
+
+在最近的工作中要应对一个重复性的筛选工作，具体任务是挑选出大量数据中不符合分数要求的项，如果一一对比比较，将是一件耗时耗力耗眼睛的工作。\<br>  
+于是我设计了一个vba脚本来帮助我做这些体力工作。具体要实现的目标有：\<br>  
+-对比每行数据元素中的实际得分和期望得分，将实际得分<期望得分的数据元素标红\<br>  
+-自动生成一个新的Sheet，命名为不合格名单，并将不合格的数据元素依次复制至新的Sheet中\<br>  
+
+\<br>  
+目前只做了基本功能的实现，还需要做一些优化，具体实现代码如下：
+```
+Sub 宏1()
+
+' 宏1 宏
+    Dim i As Integer
+    Dim j As Integer
+    j = 2
+    Sheets.Add After:=ActiveSheet
+    Sheets("Sheet1").Select
+    Sheets("Sheet1").Name = "不合格名单"
+    Sheets("不合格名单").Select
+    With ActiveWorkbook.Sheets("不合格名单").Tab
+        .Color = 49407
+        .TintAndShade = 0
+    End With
+    Sheets("不合格名单").Select
+    With ActiveWorkbook.Sheets("不合格名单").Tab
+        .Color = 255
+        .TintAndShade = 0
+    End With
+    Sheets("流程管理搜索结果导出").Select
+    Rows("1:1").Select
+    Selection.Copy
+    Sheets("不合格名单").Select
+    Rows("1:1").Select
+    ActiveSheet.Paste
+    Sheets("流程管理搜索结果导出").Select
+    For i = 2 To 56
+    Sheets("流程管理搜索结果导出").Select
+    If Sheets("流程管理搜索结果导出").Cells(i, 4) < Sheets("流程管理搜索结果导出").Cells(i, 6) Then
+        Sheets("流程管理搜索结果导出").Cells(i, 15) = "不通过"
+        Rows(i).Select
+        With Selection.Interior
+            .Pattern = xlSolid
+            .PatternColorIndex = xlAutomatic
+            .Color = 192
+            .TintAndShade = 0
+            .PatternTintAndShade = 0
+            End With
+        Selection.Copy
+        Sheets("不合格名单").Select
+        Rows(j).Select
+        ActiveSheet.Paste
+        j = j + 1
+            
+        
+    End If
+    Next i
+End Sub
+```
