@@ -28,7 +28,7 @@ header-img: "img/green.jpg"
 -  热爱IT，自学了数据结构，计算机组成原理等知识。
 -  熟练Office宏工具的使用，并具有良好的数理统计及数据分析基础。
 -  **对我感兴趣？联系我：手机：18829352915 邮箱：svt@foxmail.com 微信:svtsoto QQ：645192213**
--  **- [简历](svtsoto.github.io/简历-孙涛.doc)**
+-  **[点这里可以下载我的简历](svtsoto.github.io/简历-孙涛.doc)**
 -  感谢你关注我
 
 
