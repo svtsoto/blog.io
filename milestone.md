@@ -23,9 +23,13 @@ header-img: "img/zhihu.jpg"
 这次，只为爱好，抛掉功利心
 
 -1个月内熟悉Sony Vegas,Waves Tune,Aegisub   checkdate 2017.12.01
+
 -3个月内做出简单成品                         checkdate 2018.2.01
+
 -6个月内做出平均水平作品                     checkdate 2018.5.01
+
 -1年内做出观看量100以上的作品                checkdate 2018.11.01
+
 -3年内做出质量上乘，观看量1W以上的作品        checkdate 2020.11.01
 - [](http://)
 
