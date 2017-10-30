@@ -14,7 +14,7 @@ header-img: "img/zhihu.jpg"
 今天看到了一个老朋友的朋友圈，他po了这样一篇动态
 
 <center>
-    <p><img src="img/pic1.png" align="center"></p>
+    <p><img src="/img/pic1.png" align="center"></p>
 </center>
 想想自己，匆匆忙忙从学校毕业，没几天就开始工作，每一天都过的忙碌平庸，起码，不是自己想要的样子。
 
