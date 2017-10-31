@@ -28,7 +28,7 @@ header-img: "img/green.jpg"
 -  热爱IT，自学了数据结构，计算机组成原理等知识；熟悉基本的服务器配置,vim的使用,python,mysql数据库操作，django框架部署及应用。
 -  熟练Office宏工具的使用，并具有良好的数理统计及数据分析基础。
 -  **对我感兴趣？联系我：手机：18829352915 邮箱：svt@foxmail.com 微信:svtsoto QQ：645192213**
--  **[点这里可以下载我的简历](https://github.com/svtsoto/svtsoto.github.io/raw/master/%E7%AE%80%E5%8E%86-%E5%AD%99%E6%B6%9B.doc)**
+-  **[点这里可以下载我的简历](https://raw.githubusercontent.com/svtsoto/svtsoto.github.io/master/%E7%AE%80%E5%8E%86-%E5%AD%99%E6%B6%9B.doc)**
 -  感谢你关注我
 
 
