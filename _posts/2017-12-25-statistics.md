@@ -1,4 +1,4 @@
- ---
+---
 layout: post
 title:  广东楼盘区域价格、取名套路及竞争点简单分析（附源码）
 date: 2017-12-25
@@ -79,7 +79,7 @@ Emmm..看来经久不衰的广场、花园、国际、公馆在广东依然是�
 
 spider.py
 
-'''
+```
 # -*- coding:utf-8 -*-
 import sys  
 reload(sys)  
@@ -154,13 +154,13 @@ class ajkSpider(CrawlSpider):
             url =response.urljoin(next_page[0].extract())
       	    yield scrapy.Request(url,callback=self.parse)
             
-'''
+```
 
 所有在spider.py中定义的爬取数据都要在item.py里有所体现
 
 scrapy有些坑要注意，比如callback，比如dont——filter，这些都是很好的功能，但在入门时容易走偏
 
 另外注意在settings.py中添加一条：
-'''
+```
 ROBOTSTXT_OBEY = False
-'''
+```
