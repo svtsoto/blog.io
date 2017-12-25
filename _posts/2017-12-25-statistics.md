@@ -1,4 +1,14 @@
- 广东楼盘区域价格、取名套路及竞争点简单分析          文：svtsoto
+ ---
+layout: post
+title:  广东楼盘区域价格、取名套路及竞争点简单分析（附源码）
+date: 2017-12-25
+categories: blog
+tags: [统计]
+description: svt's blog.
+---
+
+
+ 广东楼盘区域价格、取名套路及竞争点简单分析          
 	
   无论是早晨7点拥挤的深圳地铁，还是闲适的广州茶馆，理解一座城市首先需要去了解这座城市的生活。生活包括了方方面面，但最不可缺少的，还要属房子。在中国，房子的重要性更为突出，它承载着每个人的根基，影响着社会生活的方方面面。
 	
@@ -7,14 +17,17 @@
   统计楼盘数							*数据采集自“安居客” 
   
   4,827                采集时间 2017.12.04    
+<center>
+    <p><img src="https://upload-images.jianshu.io/upload_images/9385446-90276c5ee3faba7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" align="center"></p>
+</center>
   
-  <img text-align:center src="https://upload-images.jianshu.io/upload_images/9385446-90276c5ee3faba7f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
-
 上图表示了本次分析数据涉及的主要城市以及各个城市的统计楼盘数。由于数据源（安居客）可能存在疏漏，统计楼盘数并不代表真实楼盘数，但仍具有一定的代表性：如各个城市的统计楼盘数量，可表明该城市的地产活跃度。
 
 *考虑房子的第一要素自然是房价，那么广东房价的整体分布如何？
+<center>
+    <p><img src="https://upload-images.jianshu.io/upload_images/9385446-2f8da64b12d9e0c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700" align="center"></p>
+</center>
 
-<img src="https://upload-images.jianshu.io/upload_images/9385446-2f8da64b12d9e0c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
 整体平均房价逼近2w，无疑处于很高的水平；省内市间平均房价差异大，特别是广州、深圳、珠海三市，平均房价均突破2w大关，在全国处于绝对的高位。
 
 而韶关市的房价则比较尴尬，放在全国也属于较低的位次。
@@ -24,8 +37,10 @@
 楼盘的命名是一门学问，好的楼盘名可以突出主题，升华价值；而糟糕的楼盘名甚至会起到负面的效果。
 
 让我们来看看广东的地产开发商们是如何起名字的吧！
+<center>
+    <p><img src="https://upload-images.jianshu.io/upload_images/9385446-8cb9f9a6cfd90f04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/507" align="center"></p>
+</center>
 
-<img src="https://upload-images.jianshu.io/upload_images/9385446-8cb9f9a6cfd90f04.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/507">
 
 Emmm..看来经久不衰的广场、花园、国际、公馆在广东依然是主流。也就是说，今天我们去上班的路上，经过的楼盘很有可能就叫**花园。
 
@@ -42,8 +57,10 @@ Emmm..看来经久不衰的广场、花园、国际、公馆在广东依然是�
 竞争点对于地产开发十分重要，一个好的定位与策略，可以使项目实现更高的收益。
 
 我们同样使用下图这种直观的表达方式来观察广东地产商们极力宣传的楼盘优势有哪些。一定程度上，这些词出现的频率越高，该类楼盘的市场热度越高。
+<center>
+    <p><img src="https://upload-images.jianshu.io/upload_images/9385446-38bd54e064a18e8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/507" align="center"></p>
+</center>
 
-<img src="https://upload-images.jianshu.io/upload_images/9385446-38bd54e064a18e8b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/507">
 
 对于都市人来讲，交通是选择房子的第一因素。
 
@@ -92,8 +109,6 @@ class ajkSpider(CrawlSpider):
                       ))
                        
     ]
-    #print "**********ajkSpider**********"
-    #定义回调函数
     #提取数据到Items里面，主要用到XPath和CSS选择器提取网页数据
     def parse(self, response): 
         for info in response.xpath('//a[@tongji_label="listclick"]'):
